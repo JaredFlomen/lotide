@@ -17,21 +17,19 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const middle = function(array){
-  const middleIndex = Math.floor(array.length/2);
+const middle = function(array) {
+  const middleIndex = Math.floor(array.length / 2);
   const arr = [];
-  if (array.length <= 2){
+  if (array.length <= 2) {
     return arr;
-  } 
-  else if (array.length % 2 === 0){
-    arr.push(array[middleIndex-1]);
+  } else if (array.length % 2 === 0) {
+    arr.push(array[middleIndex - 1]);
     arr.push(array[middleIndex]);
-  } 
-  else {
+  } else {
     arr.push(array[middleIndex]);
   }
   return arr;
-}
+};
 
 console.log(middle([1]));
 console.log(middle([1, 2]));
