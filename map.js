@@ -31,4 +31,3 @@ const assertArraysEqual = function(actual, expected) {
 
 assertArraysEqual(eqArrays(results1, ['g', 'c', 't']), true);
 assertArraysEqual(eqArrays(results1, ['g', 'f', 'r']), false);
-assertArraysEqual(eqArrays(results1, ['g', 'f', 'r']), false);
