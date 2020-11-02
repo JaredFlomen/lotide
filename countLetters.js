@@ -6,18 +6,17 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function (string) {
+const countLetters = function(string) {
   const stringObj = string.split(" ").join("");
   const resultObj = {};
-  for (let str of stringObj){
-    if(resultObj[str]){
+  for (let str of stringObj) {
+    if (resultObj[str]) {
       resultObj[str] ++;
-    }
-    else {
+    } else {
       resultObj[str] = 1;
     }
   }
   return resultObj;
 };
 
-console.log(countLetters("JJJAAR"));
+console.log(countLetters("lighthouse in the house"));

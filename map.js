@@ -15,7 +15,7 @@ const results1 = map(words, word => word[0]);
 const eqArrays = function(firstArray, secondArray) {
   for (let i = 0; i < firstArray.length; i++) {
     if (firstArray[i] !== secondArray[i]) {
-      return false
+      return false;
     }
   }
   return true;
