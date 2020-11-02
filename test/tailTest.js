@@ -1,10 +1,13 @@
-const assertArraysEqual = require("../assertArraysEqual");
-const eqArrays = require("../eqArrays")
-const tail = require('../tail')
+const assert = require('chai').assert;
+const tail = require('../tail');
 
-assertArraysEqual(eqArrays(tail(["Sup", "Lighthouse", "Jared"]),["Lighthouse", "Jared"]), true);
-assertArraysEqual(eqArrays(tail(["Sup", "Lighthouse"]), ["Lighthouse"]), true);
+describe('#tail', () => {
+  it('returns ["Lighthouse, "Jared"] when passed ["Sup", "Lighthouse", "Jared"]', () => {
+    assert.deepEqual(tail(["Sup", "Lighthouse", "Jared"]), ["Lighthouse", "Jared"]);
+  });
 
+  it('returns ["Lighthouse"] when passed ["Sup", "Lighthouse"]', () => {
+    assert.deepEqual(tail(["Sup", "Lighthouse"]), ["Lighthouse"]);
+  });
 
-// assertArraysEqual(tail(["Jared"]), []);
-// assertArraysEqual(tail([]), []);
+});
