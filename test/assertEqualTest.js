@@ -1,7 +1,18 @@
-const assertEqual = require('../assertEqual')
+const assert = require('chai').assert;
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(1, 211);
-assertEqual("Jared", "Jared");
+describe('#Comparing values', () => {
+  it('Should return true when comparing "Jared" to "Jared"', () => {
+    const result = "Jared";
+    const output = "Jared"
+    assert.equal(result, output)
+  });
+
+  it('Should return true when comparing "1" to "1"', () => {
+    const result = "1";
+    const output = "1"
+    assert.equal(result, output)
+  });
+
+});
+
 
