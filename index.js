@@ -32,5 +32,5 @@ module.exports = {
   eqObjects,
   eqArrays,
   assertArraysEqual
-}
+};
 
